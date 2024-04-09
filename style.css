@@ -1,0 +1,243 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+.image1{
+    width:1400px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    filter: blur(4px);
+
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    color: rgb(63, 117, 180);
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    font-size: large;
+    padding-right: 65px;
+    padding-top: 30px;
+    display: inline;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li:hover {
+    color: rgb(105, 68, 108);
+    text-decoration: underline;
+}
+
+.container1 {
+    text-align: center;
+    color: rgb(246, 240, 243);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.catalog h2 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Styling for image container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Style for individual images */
+.flower-item {
+    width: calc(20% - 20px); /* 20% for each image minus padding */
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.flower-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(46, 79, 129);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(105, 68, 108);
+}
+
+/* Styling for cart */
+.cart {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* CSS for Contact Us Section */
+#contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+}
+/* CSS for Shopping Cart */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.cart:hover {
+    background-color: #f5f5f5;
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 200px;
+}
+.checkout{
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #d32f2f;
+}
+iframe{
+    width: 100%;
+}
