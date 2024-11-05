@@ -21,12 +21,15 @@
         />
       </svg>
       <span class="cart-count">0</span>
+      <div class="cart-dropdown">
+        <ul class="listCard"></ul>
+        <button class="checkout">Checkout</button>
+      </div>
     </div>
     <header>
-      <nav class="navbar">
+      <nav id="navbar">
           <div class="logo">
-              <a href="/">
-                  <img src="./img/Знімок екрана 2024-11-03 182514-fotor-20241103183243.png"
+                  <img src="./img/logo.png"
                       alt="gfg_logo">
               </a>
           </div>
@@ -44,16 +47,19 @@
       </nav>
   </header>
       <div class="container1" id="flowers-section">
-        <img src="./img/flowers.png" class="image1" />
-        <div class="centered">
-          Alexander's - The best flowers in the whole country
+        <div class="text-content">
+          <div class="centered">
+            Alexander's - The best flowers<br> in the whole country<br>
+          </div>
+          <div class="ptext">Become the member of our fabolous community <br>and buy the best flowers that you have ever seen in your life.We are waiting for YOU!<br></div>
         </div>
+        <img src="./img/Flowers2-removebg-preview.png" class="image1" />
       </div>
       <div id="catalog"><h2>Offers</h2></div>
       <div class="container">
         <div class="flower-item">
           <img src="./img/flower1.png" class="image2" />
-          <h3>50$</h3>
+          <h3 data-price="50$">50$</h3>
             <button class="add-to-cart">Add to Cart</button>
         </div>
         <div class="flower-item">
