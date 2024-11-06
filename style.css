@@ -107,7 +107,7 @@ a{
 .image1 {
     width: 700px;
     height: 700px;
-    background-color: #e67e22;
+    background-color: white;
     margin: 0 auto;
     margin-top: 10px;
     margin-right: 50px;
@@ -157,7 +157,7 @@ ul li:hover {
     align-items: flex-start; /* Align items at the start */
     justify-content: space-between; /* Space between text and image */
     color: #060606;
-    background-color: #e67e22;
+    background-color: white;
     padding: 20px; /* Add some padding for spacing */
 }
 

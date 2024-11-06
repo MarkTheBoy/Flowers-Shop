@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listener for increment/decrement buttons
     listCard.addEventListener('click', (e) => {
       if (e.target.classList.contains('increment') || e.target.classList.contains('decrement')) {
+        e.stopPropagation();
         const flowerName = e.target.closest('li').querySelector('div:nth-child(2)').innerText;
         const item = cartItems.find(item => item.name === flowerName);
         
