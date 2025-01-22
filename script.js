@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const flowerName = flowerItem.querySelector('h3').innerText;
         const flowerImage = flowerItem.querySelector('img').src;
         
-        const existingItem = cartItems.find(item => item.name === flowerName);
+        const existingItem = cartItems.find(item => item.image === flowerImage);
         
         if (existingItem) {
           existingItem.count += 1;
@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
     listCard.addEventListener('click', (e) => {
       if (e.target.classList.contains('increment') || e.target.classList.contains('decrement')) {
         e.stopPropagation();
-        const flowerName = e.target.closest('li').querySelector('div:nth-child(2)').innerText;
-        const item = cartItems.find(item => item.name === flowerName);
+        const flowerImage = e.target.closest('li').querySelector('div:nth-child(1)').querySelector('img').src;
+        const item = cartItems.find(item => item.image === flowerImage);
         
         if (e.target.classList.contains('increment')) {
           item.count += 1;
