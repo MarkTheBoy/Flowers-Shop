@@ -126,11 +126,6 @@ a{
     text-align: center;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-}
-
 ul li {
     font-size: large;
     padding-right: 65px;
